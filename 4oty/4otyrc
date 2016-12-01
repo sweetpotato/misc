@@ -1,0 +1,4 @@
+export LANG=C LC_ALL=C
+set -ux
+DATA="${DATA:-data}"
+BIN="${0%/*}"

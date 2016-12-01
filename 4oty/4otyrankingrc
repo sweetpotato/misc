@@ -1,0 +1,10 @@
+function make-ranking() {
+	[ -n "$1" ] || return 1
+
+	cat "$DATA"/*.tsv           |\
+	grep "^$1"                  |\
+	awk -c -Ft '{print $3,$4;}' |\
+	sort                        |\
+	uniq -c                     |\
+	sort -n -r -k1
+}
