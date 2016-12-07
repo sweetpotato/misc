@@ -12,3 +12,7 @@
 4. Make ranking:
  $ ./4otyranking_new.sh
  $ ./4otyranking_cont.sh
+
+5. Show co-occurence:
+ $ ./4otycooccur_new.sh 4832254839
+ $ grep ^newbook_ data/sweetpotato14.tsv | awk -c -Ft '{print $3;}' | xargs ./4otycooccur_new.sh
