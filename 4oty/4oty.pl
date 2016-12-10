@@ -48,7 +48,7 @@ my $REGEX_NEIGHBOR_LINK_SCREEN = qr{
 
 sub abspath_to_link { "http://4oty.net${_[0]}" }
 
-sub trim { $_ = $_[0]; s/\A\s+|\s+\z//g; $_ }
+sub trim { local $_ = $_[0]; s/\A\s+|\s+\z//g; $_ }
 
 sub get_user_page {
 	my ($user) = @_;
@@ -57,51 +57,51 @@ sub get_user_page {
 	}
 	open my $in, '-|', 'curl', $user or die $!;
 	binmode $in, ':utf8';
-	my $content = <$in>;
+	local $_ = <$in>;
 	close $in;
-	return $content;
+	return $_;
 }
 
 sub get_stdin {
 	binmode STDIN, ':utf8';
-	my $content = <STDIN>;
-	return $content;
+	local $_ = <STDIN>;
+	return $_;
 }
 
 ### main ###
 for my $user (@ARGV) {
-	my $content = ($user eq '-') ? &get_stdin() : &get_user_page($user);
+	local $_ = ($user eq '-') ? &get_stdin() : &get_user_page($user);
 
 	### 新刊 ###
-	if($content =~ /${REGEX_NEWBOOKS}/) {
-		my $subcontent = $1;
-		while($subcontent =~ /${REGEX_BOOK}/g) {
-			my $entry = $1;
-			if($entry =~ /${REGEX_BOOK_TITLE_ID}/) {
-				my ($link, $id) = (&trim($1), $2);
-				print "newbook_\t${user}\t${id}\t${link}\n";
+	if(/${REGEX_NEWBOOKS}/) {
+		local $_ = $1;
+		while(/${REGEX_BOOK}/g) {
+			local $_ = $1;
+			if(/${REGEX_BOOK_TITLE_ID}/) {
+				my ($title, $id) = (&trim($1), $2);
+				print "newbook_\t${user}\t${id}\t${title}\n";
 			}
 		}
 	}
 
 	### 既刊 ###
-	if($content =~ /${REGEX_CONTBOOKS}/) {
-		my $subcontent = $1;
-		while($subcontent =~ /${REGEX_BOOK}/g) {
-			my $entry = $1;
-			if($entry =~ /${REGEX_BOOK_TITLE_ID}/) {
-				my ($link, $id) = (&trim($1), $2);
-				print "contbook\t${user}\t${id}\t${link}\n";
+	if(/${REGEX_CONTBOOKS}/) {
+		local $_ = $1;
+		while(/${REGEX_BOOK}/g) {
+			local $_ = $1;
+			if(/${REGEX_BOOK_TITLE_ID}/) {
+				my ($title, $id) = (&trim($1), $2);
+				print "contbook\t${user}\t${id}\t${title}\n";
 			}
 		}
 	}
 
 	### 似た人 ###
-	if($content =~ /${REGEX_NEIGHBORS}/) {
-		my $subcontent = $1;
-		while($subcontent =~ /${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
-			my ($n_link, $n_screen) = (&abspath_to_link($1), $2);
-			print "neighbor\t${user}\t${n_link}\t${n_screen}\n";
+	if(/${REGEX_NEIGHBORS}/) {
+		local $_ = $1;
+		while(/${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
+			my ($link, $screen) = (&abspath_to_link($1), $2);
+			print "neighbor\t${user}\t${link}\t${screen}\n";
 		}
 	}
 }
