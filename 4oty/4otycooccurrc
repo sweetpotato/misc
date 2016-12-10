@@ -2,10 +2,10 @@ function make-cooccur() {
 	[ -n "$1" ] || return 1
 	[ -n "$2" ] || return 1
 
-	grep -lsR "$2" "$DATA"		|\
+	grep -lR "$2" "$DATA"		|\
 	xargs grep -h "^$1"		|\
-	awk -c -Ft '{print $3,$4;}'	|\
+	cut -s -f 3-4			|\
 	sort				|\
 	uniq -c				|\
-	sort -n -r -k1
+	sort -n -r -k1,1
 }

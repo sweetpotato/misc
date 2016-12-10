@@ -10,10 +10,10 @@ function get-untracked-users() {
 	xargs -n 1 bash -c '[ -f "$0/${1##*/}.tsv" ] || echo "$1"' "$DATA"
 }
 
-untracked=( $(get-untracked-users) )
+untracked=($(get-untracked-users))
 while [ 0 -lt "${#untracked[@]}" ] ; do
 	for user in "${untracked[@]}" ; do
 		"$BIN/4oty.pl" "$user" >"$DATA/${user##*/}.tsv"
 	done
-	untracked=( $(get-untracked-users) )
+	untracked=($(get-untracked-users))
 done
