@@ -68,32 +68,32 @@ sub get_stdin {
 	return $_;
 }
 
+sub walk_books {
+	my $newcont = shift;
+	my $user = shift;
+	local $_ = shift;
+
+	while(/${REGEX_BOOK}/g) {
+		local $_ = $1;
+		if(/${REGEX_BOOK_TITLE_ID}/) {
+			my ($title, $id) = (&trim($1), $2);
+			print "${newcont}\t${user}\t${id}\t${title}\n";
+		}
+	}
+}
+
 ### main ###
 for my $user (@ARGV) {
 	local $_ = ($user eq '-') ? &get_stdin() : &get_user_page($user);
 
 	### 新刊 ###
 	if(/${REGEX_NEWBOOKS}/) {
-		local $_ = $1;
-		while(/${REGEX_BOOK}/g) {
-			local $_ = $1;
-			if(/${REGEX_BOOK_TITLE_ID}/) {
-				my ($title, $id) = (&trim($1), $2);
-				print "newbook_\t${user}\t${id}\t${title}\n";
-			}
-		}
+		walk_books("newbook_", $user, $1);
 	}
 
 	### 既刊 ###
 	if(/${REGEX_CONTBOOKS}/) {
-		local $_ = $1;
-		while(/${REGEX_BOOK}/g) {
-			local $_ = $1;
-			if(/${REGEX_BOOK_TITLE_ID}/) {
-				my ($title, $id) = (&trim($1), $2);
-				print "contbook\t${user}\t${id}\t${title}\n";
-			}
-		}
+		walk_books("contbook", $user, $1);
 	}
 
 	### 似た人 ###
