@@ -69,15 +69,16 @@ sub get_stdin {
 }
 
 sub walk_books {
-	my $newcont = shift;
-	my $user = shift;
-	local $_ = shift;
+	my ($newcont, $regex_books, $user) = @_;
 
-	while(/${REGEX_BOOK}/g) {
+	if(/${regex_books}/) {
 		local $_ = $1;
-		if(/${REGEX_BOOK_TITLE_ID}/) {
-			my ($title, $id) = (&trim($1), $2);
-			print "${newcont}\t${user}\t${id}\t${title}\n";
+		while(/${REGEX_BOOK}/g) {
+			local $_ = $1;
+			if(/${REGEX_BOOK_TITLE_ID}/) {
+				my ($title, $id) = (&trim($1), $2);
+				print "${newcont}\t${user}\t${id}\t${title}\n";
+			}
 		}
 	}
 }
@@ -87,14 +88,10 @@ for my $user (@ARGV) {
 	local $_ = ($user eq '-') ? &get_stdin() : &get_user_page($user);
 
 	### 新刊 ###
-	if(/${REGEX_NEWBOOKS}/) {
-		walk_books("newbook_", $user, $1);
-	}
+	walk_books("newbook_", $REGEX_NEWBOOKS, $user);
 
 	### 既刊 ###
-	if(/${REGEX_CONTBOOKS}/) {
-		walk_books("contbook", $user, $1);
-	}
+	walk_books("contbook", $REGEX_CONTBOOKS, $user);
 
 	### 似た人 ###
 	if(/${REGEX_NEIGHBORS}/) {
