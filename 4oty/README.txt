@@ -15,4 +15,4 @@
 
 5. Show co-occurence:
  $ ./cooccur_new.sh 4832254839
- $ grep ^newbook_ data/sweetpotato14.tsv | awk -c -Ft '{print $3;}' | xargs ./cooccur_new.sh
+ $ grep ^newbook_ data/sweetpotato14.tsv | cut -f3 | xargs ./cooccur_new.sh
