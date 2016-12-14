@@ -1,7 +1,7 @@
 function make-ranking() {
 	[ -n "$1" ] || return 1
 
-	grep -hR "^$1" "$DATA"		|\
+	grep -h "^$1" "$DATA"/*.tsv	|\
 	cut -s -f 3-4			|\
 	sort				|\
 	uniq -c				|\

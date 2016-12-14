@@ -2,7 +2,7 @@ function make-cooccur() {
 	[ -n "$1" ] || return 1
 	[ -n "$2" ] || return 1
 
-	grep -lR "$2" "$DATA"		|\
+	grep -l "$2" "$DATA"/*.tsv	|\
 	xargs grep -h "^$1"		|\
 	cut -s -f 3-4			|\
 	sort				|\

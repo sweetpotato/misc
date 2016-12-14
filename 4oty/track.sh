@@ -3,7 +3,7 @@ source "${0%/*}/4otyrc"
 
 function get-untracked-users() {
 	local users=($(\
-		grep -hR '^neighbor' "$DATA" | cut -s -f 3 | sort | uniq \
+		grep -h '^neighbor' "$DATA"/*.tsv | cut -s -f 3 | sort | uniq \
 	))
 	for user in "${users[@]}" ; do
 		[ -f "$DATA/${user##*/}.tsv" ] || echo "$user"
