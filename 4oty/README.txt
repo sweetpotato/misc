@@ -16,8 +16,8 @@
  $ ./ranking.sh -f 0,2 contbook >ranking_0_2_cont.txt
 
 5. Show co-occurence:
- $ ./cooccur_new.sh 4832254839
- $ grep ^newbook_ data/sweetpotato14.tsv | cut -f3 | xargs ./cooccur_new.sh
+ $ ./cooccur.sh newbook 4832254839
+ $ grep ^newbook_ data/sweetpotato14.tsv | cut -f3 | xargs ./cooccur.sh newbook
 
 6. Other one-liners:
 
