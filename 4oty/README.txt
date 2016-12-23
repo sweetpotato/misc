@@ -21,10 +21,6 @@
 
 6. Other one-liners:
 
- $ grep -h ^newbook_ data/*.tsv | awk -F$'\t' '{print $5;}' | sed -r -e 's!https?://[-_a-zA-Z0-9./?%]+!!g' -e 's/^\s+|\s+$//g' | perl -CS -ne 'chomp;print length($_),"\n"' | sort -n >nchars_new.txt
-
- $ grep -h ^contbook data/*.tsv | awk -F$'\t' '{print $5;}' | sed -r -e 's!https?://[-_a-zA-Z0-9./?%]+!!g' -e 's/^\s+|\s+$//g' | perl -CS -ne 'chomp;print length($_),"\n"' | sort -n >nchars_cont.txt
-
  $ grep -c -e 434483755X -e 4344835832 data/*.tsv | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^contbook | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^newbook_ | awk -F: '$2=="0"{print $1;}' | xargs grep -v ^neighbor
 
  $ grep -c -e 4199505245 -e 4199504842 data/*.tsv | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^contbook | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^newbook_ | awk -F: '$2=="0"{print $1;}' | xargs grep -v ^neighbor
