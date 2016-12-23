@@ -34,12 +34,16 @@ my $REGEX_BOOK = qr{
 	</table>
 }sx;
 
-my $REGEX_BOOK_TITLE_ID = qr{
+my $REGEX_BOOK_TITLE_ID_DESC = qr{
 	<div[ ]class="panel-heading">
 	(.*?)
 	</div>
 	.*?
 	<a[ ]href=\x{22}(.*?)/?\?
+	.*?
+	<td[ ]colspan="2">
+	(.*?)
+	</td>
 }sx;
 
 my $REGEX_NEIGHBOR_LINK_SCREEN = qr{
@@ -75,9 +79,10 @@ sub walk_books {
 		local $_ = $1;
 		while(/${REGEX_BOOK}/g) {
 			local $_ = $1;
-			if(/${REGEX_BOOK_TITLE_ID}/) {
-				my ($title, $id) = (&trim($1), $2);
-				print "${newcont}\t${user}\t${id}\t${title}\n";
+			if(/${REGEX_BOOK_TITLE_ID_DESC}/) {
+				my ($title, $id, $desc) = (&trim($1), $2, &trim($3));
+				$desc =~ s/[\t\r\n]+/ /g;
+				print "${newcont}\t${user}\t${id}\t${title}\t${desc}\n";
 			}
 		}
 	}
