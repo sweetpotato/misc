@@ -69,5 +69,4 @@ new1)
 esac
 
 ## step 3: print
-echo "${data[@]}"
 grep -h -v ^neighbor "${data[@]}"

@@ -26,6 +26,7 @@
  $ ./kvotes.sh cont2 434483755X 4344835832
  $ ./kvotes.sh cont2 4199505245 4199504842
 
+ $ ./ranking.sh -f 1,1 newbook
  $ ./ranking.sh -f 1,1 contbook
  $ ./kvotes.sh newcont 4434216031 4434217984
  $ ./kvotes.sh newcont 4063885631 4063886255
