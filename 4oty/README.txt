@@ -10,8 +10,10 @@
  $ ./track.sh
 
 4. Make ranking:
- $ ./ranking_new.sh >ranking_new.txt
- $ ./ranking_cont.sh >ranking_cont.txt
+ $ ./ranking.sh newbook >ranking_new.txt
+ $ ./ranking.sh contbook >ranking_cont.txt
+ $ ./ranking.sh -f 1,0 newbook >ranking_1_0_new.txt
+ $ ./ranking.sh -f 0,2 contbook >ranking_0_2_cont.txt
 
 5. Show co-occurence:
  $ ./cooccur_new.sh 4832254839

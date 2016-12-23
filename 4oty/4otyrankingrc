@@ -1,5 +1,23 @@
+function is-non-negative-integer() {
+	for i in "$@" ; do
+		expr "$i" + 1 >/dev/null 2>&1
+		[ $? -lt 2 ] || return 1
+		[ "$i" -ge 0 ] || return 1
+	done
+	return 0
+}
+
 function find-data() {
 	find "$DATA" -maxdepth 1 -type f -name '*.tsv'
+}
+
+function find-data-filtered() {
+	[ -n "$1" ] || return 1
+	[ -n "$2" ] || return 1
+
+	find-data |\
+	xargs grep -c ^newbook_ | awk -F: -v "c=$1" '$2==c{print $1;}' |\
+	xargs grep -c ^contbook | awk -F: -v "c=$2" '$2==c{print $1;}'
 }
 
 function make-ranking() {
