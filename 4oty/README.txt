@@ -12,23 +12,20 @@
 4. Make ranking:
  $ ./ranking.sh newbook >ranking_new.txt
  $ ./ranking.sh contbook >ranking_cont.txt
- $ ./ranking.sh -f 1,0 newbook >ranking_1_0_new.txt
- $ ./ranking.sh -f 0,2 contbook >ranking_0_2_cont.txt
 
 5. Show co-occurence:
  $ ./cooccur.sh newbook 4832254839
  $ grep ^newbook_ data/sweetpotato14.tsv | cut -f3 | xargs ./cooccur.sh newbook
 
-6. Other one-liners:
+6. Others:
+ $ ./ranking.sh -f 1,0 newbook
+ $ ./kvotes.sh new1 483224762X
+ $ ./kvotes.sh new1 4040686047
 
- $ grep -c -e 434483755X -e 4344835832 data/*.tsv | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^contbook | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^newbook_ | awk -F: '$2=="0"{print $1;}' | xargs grep -v ^neighbor
+ $ ./ranking.sh -f 0,2 contbook
+ $ ./kvotes.sh cont2 434483755X 4344835832
+ $ ./kvotes.sh cont2 4199505245 4199504842
 
- $ grep -c -e 4199505245 -e 4199504842 data/*.tsv | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^contbook | awk -F: '$2=="2"{print $1;}' | xargs grep -c ^newbook_ | awk -F: '$2=="0"{print $1;}' | xargs grep -v ^neighbor
-
- $ grep -l 4434216031 data/*.tsv | xargs grep -c ^newbook_ | awk -F: '$2=="1"{print $1;}' | xargs grep -l 4434217984 | xargs grep -c ^contbook | awk -F: '$2=="1"{print $1;}' | xargs grep -v ^neighbor
-
- $ grep -l 4063885631 data/*.tsv | xargs grep -c ^newbook_ | awk -F: '$2=="1"{print $1;}' | xargs grep -l 4063886255 | xargs grep -c ^contbook | awk -F: '$2=="1"{print $1;}' | xargs grep -v ^neighbor
-
- $ grep -l 483224762X data/*.tsv | xargs grep -c ^newbook_ | awk -F: '$2=="1"{print $1;}' | xargs grep -c ^contbook | awk -F: '$2=="0"{print $1;}' | xargs grep -v ^neighbor
-
- $ grep -l 4040686047 data/*.tsv | xargs grep -c ^newbook_ | awk -F: '$2=="1"{print $1;}' | xargs grep -c ^contbook | awk -F: '$2=="0"{print $1;}' | xargs grep -v ^neighbor
+ $ ./ranking.sh -f 1,1 contbook
+ $ ./kvotes.sh newcont 4434216031 4434217984
+ $ ./kvotes.sh newcont 4063885631 4063886255
