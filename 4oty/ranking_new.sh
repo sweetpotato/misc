@@ -2,4 +2,4 @@
 source "${0%/*}/4otyrc"
 source "$BIN/4otyrankingrc"
 
-make-ranking newbook_
+find-data | make-ranking newbook_

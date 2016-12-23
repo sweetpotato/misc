@@ -1,9 +1,13 @@
+function find-data() {
+	find "$DATA" -maxdepth 1 -type f -name '*.tsv'
+}
+
 function make-ranking() {
 	[ -n "$1" ] || return 1
 
-	grep -h "^$1" "$DATA"/*.tsv	|\
-	cut -s -f 3-4			|\
-	sort				|\
-	uniq -c				|\
+	xargs grep -h "^$1"	|\
+	cut -s -f 3-4		|\
+	sort			|\
+	uniq -c			|\
 	sort -n -r -k1,1
 }
