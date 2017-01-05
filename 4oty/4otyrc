@@ -13,6 +13,10 @@ function find-data-filtered() {
 	xargs grep -c ^contbook | awk -F: -v "c=$2" '$2==c{print $1;}'
 }
 
+function awk-tsv() {
+	awk -F$'\t' -v OFS=$'\t' "$@"
+}
+
 function is-any-of() {
 	[ -n "$1" ] || return 1
 	local tested="$1"
@@ -43,7 +47,7 @@ function make-cooccur() {
 function make-nchars() {
 	[ -n "$1" ] || return 1
 
-	find-data | xargs grep -h "^$1" | awk -F$'\t' '{print $5;}' |\
+	find-data | xargs grep -h "^$1" | awk-tsv '{print $5;}' |\
 	sed -r -e 's!https?://[-_a-zA-Z0-9./?%]+!!g' -e 's/^\s+|\s+$//g' |\
 	perl -CS -ne 'chomp;print length($_),"\n"' | sort -n
 }
