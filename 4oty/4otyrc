@@ -36,33 +36,21 @@ function make-cooccur() {
 	[ -n "$1" ] || return 1
 	[ -n "$2" ] || return 1
 
-	find-data |\
-	xargs grep -l "$2" |\
-	xargs grep -h "^$1" |\
-	cut -s -f 3-4 |\
-	sort |\
-	uniq -c |\
-	sort -n -r -k1,1
+	find-data | xargs grep -l "$2" | xargs grep -h "^$1" |\
+	cut -s -f3,4 | sort | uniq -c | sort -n -r -k1,1
 }
 
 function make-nchars() {
 	[ -n "$1" ] || return 1
 
-	find-data |\
-	xargs grep -h "^$1" |\
-	awk -F$'\t' '{print $5;}' |\
+	find-data | xargs grep -h "^$1" | awk -F$'\t' '{print $5;}' |\
 	sed -r -e 's!https?://[-_a-zA-Z0-9./?%]+!!g' -e 's/^\s+|\s+$//g' |\
-	perl -CS -ne 'chomp;print length($_),"\n"' |\
-	sort -n
+	perl -CS -ne 'chomp;print length($_),"\n"' | sort -n
 }
 
 function make-ranking() {
 	[ -n "$1" ] || return 1
 
-	xargs grep -h "^$1" |\
-	cut -s -f 3-4 |\
-	sort |\
-	uniq -c |\
-	sort -n -r -k1,1 |\
-	sed -e 's/ *//' -e 's/ /\t/'
+	xargs grep -h "^$1" | cut -s -f3,4 | sort | uniq -c |\
+	sort -n -r -k1,1 | sed -e 's/ *//' -e 's/ /\t/'
 }
