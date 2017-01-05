@@ -23,5 +23,6 @@ function make-ranking() {
 	cut -s -f 3-4		|\
 	sort			|\
 	uniq -c			|\
-	sort -n -r -k1,1
+	sort -n -r -k1,1	|\
+	sed -e 's/ *//' -e 's/ /\t/'
 }
