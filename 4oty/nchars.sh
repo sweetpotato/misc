@@ -9,4 +9,4 @@ is-any-of "$target" newbook newbook_ contbook || exit 1
 shift 1
 
 # run
-make-nchars "$target"
+make-nchars "$target" | cut -f6

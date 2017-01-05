@@ -47,9 +47,13 @@ function make-cooccur() {
 function make-nchars() {
 	[ -n "$1" ] || return 1
 
-	find-data | xargs grep -h "^$1" | awk-tsv '{print $5;}' |\
-	sed -r -e 's!https?://[-_a-zA-Z0-9./?%]+!!g' -e 's/^\s+|\s+$//g' |\
-	perl -CS -ne 'chomp;print length($_),"\n"' | sort -n
+	find-data | xargs grep -h "^$1" |\
+	perl -CS -a -F'/\t/' -ne '
+		$F[-1]=~s!https?://[-_a-zA-Z0-9./?%]+!!g;
+		$F[-1]=~s/^\s+|\s+$//g;
+		print join "\t",@F;
+		print "\t",length($F[-1]),"\n";
+	' | sort -n
 }
 
 function make-ranking() {
