@@ -1,6 +1,7 @@
 #!/bin/bash
+export LANG=C LC_ALL=C
+set -ux
 source "${0%/*}/4otyrc"
-source "$BIN/4otynchars"
 
 # check argument
 mode="$1"

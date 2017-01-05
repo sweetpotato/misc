@@ -1,4 +1,6 @@
 #!/bin/bash
+export LANG=C LC_ALL=C
+set -ux
 source "${0%/*}/4otyrc"
 
 function get-untracked-users() {
@@ -13,7 +15,7 @@ function get-untracked-users() {
 untracked=($(get-untracked-users))
 while [ 0 -lt "${#untracked[@]}" ] ; do
 	for user in "${untracked[@]}" ; do
-		"$BIN/4oty.pl" "$user" >"$DATA/${user##*/}.tsv"
+		"${0%/*}/4oty.pl" "$user" >"$DATA/${user##*/}.tsv"
 	done
 	untracked=($(get-untracked-users))
 done
