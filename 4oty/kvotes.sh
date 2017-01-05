@@ -4,17 +4,7 @@ source "$BIN/4otynchars"
 
 # check argument
 mode="$1"
-case "$mode" in
-new1)
-	;;
-newcont)
-	;;
-cont2)
-	;;
-*)
-	exit 1
-	;;
-esac
+is-any-of "$mode" new1 newcont cont2 || exit 1
 shift 1
 
 book1="$1"

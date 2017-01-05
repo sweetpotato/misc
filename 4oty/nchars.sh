@@ -4,17 +4,7 @@ source "$BIN/4otynchars"
 
 # check argument
 target="$1"
-case "$target" in
-newbook)
-	;;
-newbook_)
-	;;
-contbook)
-	;;
-*)
-	exit 1
-	;;
-esac
+is-any-of "$target" newbook newbook_ contbook || exit 1
 shift 1
 
 # run
