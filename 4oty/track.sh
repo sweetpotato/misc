@@ -4,8 +4,8 @@ set -ux
 source "${0%/*}/4otyrc"
 
 function get-untracked-users() {
-	local users=($(\
-		find-data | xargs grep -h ^neighbor | cut -f3 | sort -u
+	local users=($( \
+		find-data | xargs grep -h ^neighbor | cut -f3 | sort -u \
 	))
 	for user in "${users[@]}" ; do
 		[ -f "$DATA/${user##*/}.tsv" ] || echo "$user"
