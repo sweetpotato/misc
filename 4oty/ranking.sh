@@ -3,6 +3,14 @@ export LANG=C LC_ALL=C
 set -ux
 source "${0%/*}/4otyrc"
 
+function x-find-data() {
+	if [ "$1" = yes ] ; then
+		find-data-filtered "$2" "$3"
+	else
+		find-data
+	fi
+}
+
 # parse option
 filter=no
 while getopts f: optchr ; do
@@ -26,10 +34,4 @@ is-any-of "$target" newbook newbook_ contbook || exit 1
 shift 1
 
 # run
-(
-	if [ "$filter" = yes ] ; then
-		find-data-filtered "$nr_new" "$nr_cont"
-	else
-		find-data
-	fi
-) | make-ranking "$target"
+x-find-data "$filter" "${nr_new:-}" "${nr_cont:-}" | make-ranking "$target"
