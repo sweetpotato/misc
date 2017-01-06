@@ -41,12 +41,17 @@ function is-non-negative-integer() {
 	return 0
 }
 
+function make-ranking() {
+	[ -n "$1" ] || return 1
+
+	xargs grep -h "^$1" | cut -f3,4 | count | sort -n -r -k1,1
+}
+
 function make-cooccur() {
 	[ -n "$1" ] || return 1
 	[ -n "$2" ] || return 1
 
-	find-data | xargs grep -l "$2" | xargs grep -h "^$1" |\
-	cut -f3,4 | count | sort -n -r -k1,1
+	find-data | xargs grep -l "$2" | make-ranking "$1"
 }
 
 function make-nchars() {
@@ -59,10 +64,4 @@ function make-nchars() {
 		print join "\t",@F;
 		print "\t",length($F[-1]),"\n";
 	' | sort -n
-}
-
-function make-ranking() {
-	[ -n "$1" ] || return 1
-
-	xargs grep -h "^$1" | cut -f3,4 | count | sort -n -r -k1,1
 }
