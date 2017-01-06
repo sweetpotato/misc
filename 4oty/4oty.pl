@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use utf8;
 local $/ = undef;
+binmode STDIN, ':utf8';
 binmode STDOUT, ":utf8";
 
 my $REGEX_USERLINK = qr!http://4oty\.net/2016/user/[_0-9a-zA-Z]+!;
@@ -54,24 +55,6 @@ sub abspath_to_link { "http://4oty.net${_[0]}" }
 
 sub trim { local $_ = $_[0]; s/\A\s+|\s+\z//g; $_ }
 
-sub get_user_page {
-	my ($user) = @_;
-	if($user !~ /\A${REGEX_USERLINK}\z/) {
-		return;
-	}
-	open my $in, '-|', 'curl', $user or die $!;
-	binmode $in, ':utf8';
-	local $_ = <$in>;
-	close $in;
-	return $_;
-}
-
-sub get_stdin {
-	binmode STDIN, ':utf8';
-	local $_ = <STDIN>;
-	return $_;
-}
-
 sub walk_books {
 	my ($newcont, $regex_books, $user) = @_;
 
@@ -89,22 +72,17 @@ sub walk_books {
 }
 
 ### main ###
-for my $user (@ARGV) {
-	local $_ = ($user eq '-') ? &get_stdin() : &get_user_page($user);
+my $user = shift or die;
+   $user =~ /\A${REGEX_USERLINK}\z/ or die;
+local $_ = <>;
 
-	### 新刊 ###
-	walk_books("newbook_", $REGEX_NEWBOOKS, $user);
-
-	### 既刊 ###
-	walk_books("contbook", $REGEX_CONTBOOKS, $user);
-
-	### 似た人 ###
-	if(/${REGEX_NEIGHBORS}/) {
-		local $_ = $1;
-		while(/${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
-			my ($link, $screen) = (&abspath_to_link($1), $2);
-			print "neighbor\t${user}\t${link}\t${screen}\n";
-		}
+walk_books('newbook_', $REGEX_NEWBOOKS, $user);
+walk_books('contbook', $REGEX_CONTBOOKS, $user);
+if(/${REGEX_NEIGHBORS}/) {
+	local $_ = $1;
+	while(/${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
+		my ($link, $screen) = (&abspath_to_link($1), $2);
+		print "neighbor\t${user}\t${link}\t${screen}\n";
 	}
 }
 

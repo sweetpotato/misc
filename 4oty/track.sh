@@ -15,6 +15,7 @@ function get-untracked-users() {
 untracked=($(get-untracked-users))
 while [ 0 -lt "${#untracked[@]}" ] ; do
 	for user in "${untracked[@]}" ; do
+		curl -s "$user" |\
 		"${0%/*}/4oty.pl" "$user" >"$DATA/${user##*/}.tsv"
 	done
 	untracked=($(get-untracked-users))
