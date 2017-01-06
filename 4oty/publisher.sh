@@ -23,13 +23,13 @@ is-any-of "$target" newbook newbook_ contbook || exit 1
 shift 1
 
 # run
-if [ "$sub" = no ] ; then
+if [ "$sub" = yes ] ; then
 	find-data | xargs grep -h "^$target" | cut -f3 | sed 's!.*/dp/!!' |\
-	./isbn.pl | cut -f1 | count | sort -n -r |\
-	awk -v OFS=$'\t' '{print $2,"","",$1}'
-else
-	find-data | xargs grep -h "^$target" | cut -f3 | sed 's!.*/dp/!!' |\
-	./isbn.pl | cut -f1,2 | count |\
+	"${0%/*}/isbn.pl" | cut -f1,2 | count |\
 	awk '$3!="-"{print $2,$1,$3}' | sort -n -r |\
 	awk -v OFS=$'\t' '{print $1,$3,$2}'
+else
+	find-data | xargs grep -h "^$target" | cut -f3 | sed 's!.*/dp/!!' |\
+	"${0%/*}/isbn.pl" | cut -f1 | count | sort -n -r |\
+	awk -v OFS=$'\t' '{print $2,"","",$1}'
 fi
