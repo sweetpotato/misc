@@ -17,6 +17,10 @@ function awk-tsv() {
 	awk -F$'\t' -v OFS=$'\t' "$@"
 }
 
+function awk-otsv() {
+	awk -v OFS=$'\t' "$@"
+}
+
 function count() {
 	sort | uniq -c | sed -e 's/ *//' -e 's/ /\t/'
 }
