@@ -58,16 +58,14 @@ sub trim { my $s = $_[0]; $s =~ s/\A\s+|\s+\z//g; $s }
 sub walk_books {
 	my ($newcont, $regex_books, $user, $content) = @_;
 
-	if($content =~ /${regex_books}/) {
-		my $books = $1;
-		while($books =~ /${REGEX_BOOK}/g) {
-			my $book = $1;
-			if($book =~ /${REGEX_BOOK_TITLE_ID_DESC}/) {
-				my ($title, $id, $desc) = (&trim($1), $2, &trim($3));
-				$desc =~ s/[\t\r\n]+/ /g;
-				print "${newcont}\t${user}\t${id}\t${title}\t${desc}\n";
-			}
-		}
+	return unless $content =~ /${regex_books}/;
+	my $books = $1;
+	while($books =~ /${REGEX_BOOK}/g) {
+		my $book = $1;
+		next unless $book =~ /${REGEX_BOOK_TITLE_ID_DESC}/;
+		my ($title, $id, $desc) = (&trim($1), $2, &trim($3));
+		$desc =~ s/[\t\r\n]+/ /g;
+		print "${newcont}\t${user}\t${id}\t${title}\t${desc}\n";
 	}
 }
 
