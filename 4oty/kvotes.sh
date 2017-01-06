@@ -21,13 +21,13 @@ if [ "$mode" != cont2 ] ; then
 		echo "${data[@]}" |\
 		xargs grep -l "$book1" |\
 		xargs grep -c ^newbook_ |\
-		awk -F: '$2==1{print $1;}' \
+		awk -F: '$2==1{print $1}' \
 	))
 else
 	data=($( \
 		echo "${data[@]}" |\
 		xargs grep -c ^newbook_  |\
-		awk -F: '$2==0{print $1;}' \
+		awk -F: '$2==0{print $1}' \
 	))
 fi
 
@@ -37,9 +37,9 @@ cont2)
 	data=($( \
 		echo "${data[@]}" |\
 		xargs grep -c -e "$book1" -e "$book2" |\
-		awk -F: '$2==2{print $1;}' |\
+		awk -F: '$2==2{print $1}' |\
 		xargs grep -c ^contbook |\
-		awk -F: '$2==2{print $1;}' \
+		awk -F: '$2==2{print $1}' \
 	))
 	;;
 newcont)
@@ -47,14 +47,14 @@ newcont)
 		echo "${data[@]}" |\
 		xargs grep -l "$book2" |\
 		xargs grep -c ^contbook |\
-		awk -F: '$2==1{print $1;}' \
+		awk -F: '$2==1{print $1}' \
 	))
 	;;
 new1)
 	data=($( \
 		echo "${data[@]}" |\
 		xargs grep -c ^contbook |\
-		awk -F: '$2==0{print $1;}' \
+		awk -F: '$2==0{print $1}' \
 	))
 	;;
 esac

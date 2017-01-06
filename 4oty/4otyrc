@@ -9,8 +9,8 @@ function find-data-filtered() {
 	[ -n "$2" ] || return 1
 
 	find-data |\
-	xargs grep -c ^newbook_ | awk -F: -v "c=$1" '$2==c{print $1;}' |\
-	xargs grep -c ^contbook | awk -F: -v "c=$2" '$2==c{print $1;}'
+	xargs grep -c ^newbook_ | awk -F: -v "c=$1" '$2==c{print $1}' |\
+	xargs grep -c ^contbook | awk -F: -v "c=$2" '$2==c{print $1}'
 }
 
 function awk-tsv() {
@@ -25,10 +25,11 @@ function is-any-of() {
 	[ -n "$1" ] || return 1
 	local tested="$1"
 	shift
+
 	for i in "$@" ; do
-		[ "$tested" = "$i" ] && return 0 # success
+		[ "$tested" = "$i" ] && return 0
 	done
-	return 1 # failure
+	return 1
 }
 
 function is-non-negative-integer() {
@@ -45,7 +46,7 @@ function make-cooccur() {
 	[ -n "$2" ] || return 1
 
 	find-data | xargs grep -l "$2" | xargs grep -h "^$1" |\
-	cut -s -f3,4 | count | sort -n -r -k1,1
+	cut -f3,4 | count | sort -n -r -k1,1
 }
 
 function make-nchars() {
@@ -63,5 +64,5 @@ function make-nchars() {
 function make-ranking() {
 	[ -n "$1" ] || return 1
 
-	xargs grep -h "^$1" | cut -s -f3,4 | count | sort -n -r -k1,1
+	xargs grep -h "^$1" | cut -f3,4 | count | sort -n -r -k1,1
 }
