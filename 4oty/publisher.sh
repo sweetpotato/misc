@@ -25,11 +25,11 @@ shift 1
 # run
 if [ "$sub" = no ] ; then
 	find-data | xargs grep -h "^$target" | cut -f3 | sed 's!.*/dp/!!' |\
-	./isbn.pl | cut -f1 | sort | uniq -c | sort -n -r |\
+	./isbn.pl | cut -f1 | count | sort -n -r |\
 	awk -v OFS=$'\t' '{print $2,"","",$1}'
 else
 	find-data | xargs grep -h "^$target" | cut -f3 | sed 's!.*/dp/!!' |\
-	./isbn.pl | cut -f1,2 | sort | uniq -c |\
+	./isbn.pl | cut -f1,2 | count |\
 	awk '$3!="-"{print $2,$1,$3}' | sort -n -r |\
 	awk -v OFS=$'\t' '{print $1,$3,$2}'
 fi

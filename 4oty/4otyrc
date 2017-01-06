@@ -17,6 +17,10 @@ function awk-tsv() {
 	awk -F$'\t' -v OFS=$'\t' "$@"
 }
 
+function count() {
+	sort | uniq -c | sed -e 's/ *//' -e 's/ /\t/'
+}
+
 function is-any-of() {
 	[ -n "$1" ] || return 1
 	local tested="$1"
@@ -41,7 +45,7 @@ function make-cooccur() {
 	[ -n "$2" ] || return 1
 
 	find-data | xargs grep -l "$2" | xargs grep -h "^$1" |\
-	cut -s -f3,4 | sort | uniq -c | sort -n -r -k1,1
+	cut -s -f3,4 | count | sort -n -r -k1,1
 }
 
 function make-nchars() {
@@ -59,6 +63,5 @@ function make-nchars() {
 function make-ranking() {
 	[ -n "$1" ] || return 1
 
-	xargs grep -h "^$1" | cut -s -f3,4 | sort | uniq -c |\
-	sort -n -r -k1,1 | sed -e 's/ *//' -e 's/ /\t/'
+	xargs grep -h "^$1" | cut -s -f3,4 | count | sort -n -r -k1,1
 }
