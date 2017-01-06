@@ -1,10 +1,6 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-use utf8;
-local $/ = undef;
-binmode STDIN, ':utf8';
-binmode STDOUT, ":utf8";
 
 my $REGEX_USERLINK = qr!http://4oty\.net/2016/user/[_0-9a-zA-Z]+!;
 
@@ -70,12 +66,18 @@ sub walk_books {
 }
 
 ### main ###
+binmode STDIN,  ':utf8';
+binmode STDOUT, ':utf8';
+
 my $user = shift or die;
    $user =~ /\A${REGEX_USERLINK}\z/ or die;
+
+local $/ = undef;
 my $content = <>;
 
-walk_books('newbook_', $REGEX_NEWBOOKS, $user, $content);
+walk_books('newbook_', $REGEX_NEWBOOKS,  $user, $content);
 walk_books('contbook', $REGEX_CONTBOOKS, $user, $content);
+
 if($content =~ /${REGEX_NEIGHBORS}/) {
 	my $neighbor = $1;
 	while($neighbor =~ /${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
