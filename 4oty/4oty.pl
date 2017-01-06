@@ -53,16 +53,16 @@ my $REGEX_NEIGHBOR_LINK_SCREEN = qr{
 
 sub abspath_to_link { "http://4oty.net${_[0]}" }
 
-sub trim { local $_ = $_[0]; s/\A\s+|\s+\z//g; $_ }
+sub trim { my $s = $_[0]; $s =~ s/\A\s+|\s+\z//g; $s }
 
 sub walk_books {
-	my ($newcont, $regex_books, $user) = @_;
+	my ($newcont, $regex_books, $user, $content) = @_;
 
-	if(/${regex_books}/) {
-		local $_ = $1;
-		while(/${REGEX_BOOK}/g) {
-			local $_ = $1;
-			if(/${REGEX_BOOK_TITLE_ID_DESC}/) {
+	if($content =~ /${regex_books}/) {
+		my $books = $1;
+		while($books =~ /${REGEX_BOOK}/g) {
+			my $book = $1;
+			if($book =~ /${REGEX_BOOK_TITLE_ID_DESC}/) {
 				my ($title, $id, $desc) = (&trim($1), $2, &trim($3));
 				$desc =~ s/[\t\r\n]+/ /g;
 				print "${newcont}\t${user}\t${id}\t${title}\t${desc}\n";
@@ -74,13 +74,13 @@ sub walk_books {
 ### main ###
 my $user = shift or die;
    $user =~ /\A${REGEX_USERLINK}\z/ or die;
-local $_ = <>;
+my $content = <>;
 
-walk_books('newbook_', $REGEX_NEWBOOKS, $user);
-walk_books('contbook', $REGEX_CONTBOOKS, $user);
-if(/${REGEX_NEIGHBORS}/) {
-	local $_ = $1;
-	while(/${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
+walk_books('newbook_', $REGEX_NEWBOOKS, $user, $content);
+walk_books('contbook', $REGEX_CONTBOOKS, $user, $content);
+if($content =~ /${REGEX_NEIGHBORS}/) {
+	my $neighbor = $1;
+	while($neighbor =~ /${REGEX_NEIGHBOR_LINK_SCREEN}/g) {
 		my ($link, $screen) = (&abspath_to_link($1), $2);
 		print "neighbor\t${user}\t${link}\t${screen}\n";
 	}
