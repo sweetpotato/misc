@@ -1,0 +1,39 @@
+function fetch_and_parse {
+	local url="$1"
+	local html="$2"
+	local txt="$3"
+
+	if [ -f "$html" ] ; then return 1 ; fi
+
+	curl -o "$html" "$url"
+	[ -f "$html" ]
+	chmod 444 "$html"
+
+	perl -CO -I "${0%/*}"/.. "${0%/*}"/parse.pl <"$html" | sort >"$txt"
+	chmod 444 "$txt"
+
+	return 0
+}
+
+function fetch_and_parse_today_data {
+	local url="$1"
+
+	local ymd=$(date +%Y%m%d)
+	local html="${0%/*}"/data/"$ymd".html
+	local txt="${html%.*}".txt
+
+	mkdir -p "${0%/*}"/data
+	fetch_and_parse "$url" "$html" "$txt"
+}
+
+function diff_latest_two {
+	local wildcard="$1"
+
+	# DO NOT quote $wildcard
+	cat <(echo /dev/null) <(ls $wildcard) | tail -n 2 | xargs diff -u ||:
+}
+
+function diff_latest_two_data_txt {
+	# DO quote asterisk
+	diff_latest_two "${0%/*}/data/*.txt"
+}

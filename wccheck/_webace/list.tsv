@@ -1,0 +1,8 @@
+タブ文字がない行は全て無視される。
+タブ文字がある行でも、1列目以外は全て無視される。
+
+shonenace	https://web-ace.jp/shonenace/	少年エース
+youngace	https://web-ace.jp/youngace/	ヤングエース
+gundamace	https://web-ace.jp/gundamace/	ガンダムエース
+compace	https://web-ace.jp/compace/	コンプエース
+comptiq	https://web-ace.jp/comptiq/	コンプティーク

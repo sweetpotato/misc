@@ -1,0 +1,45 @@
+タブ文字がない行は全て無視される。
+タブ文字がある行でも、1列目以外は全て無視される。
+
+# スクウェア・エニックス
+24	https://comic.pixiv.net/magazines/24	Gファンタジー
+50	https://comic.pixiv.net/magazines/50	ガンガンJOKER
+55	https://comic.pixiv.net/magazines/55	少年ガンガン
+182	https://comic.pixiv.net/magazines/182	ガンガンpixiv
+
+# アスキー・メディアワークス
+27	https://comic.pixiv.net/magazines/27	電撃マオウ
+31	https://comic.pixiv.net/magazines/31	電撃萌王
+42	https://comic.pixiv.net/magazines/42	電撃G'sコミック
+98	https://comic.pixiv.net/magazines/98	@vitamin
+109	https://comic.pixiv.net/magazines/109	COMIC it
+128	https://comic.pixiv.net/magazines/128	だいおうじピクシブ
+186	https://comic.pixiv.net/magazines/186	daioh@Pi
+
+# メディアファクトリー
+1	https://comic.pixiv.net/magazines/1	コミックジーン
+6	https://comic.pixiv.net/magazines/6	コミックアライブ
+7	https://comic.pixiv.net/magazines/7	コミックフラッパー
+88	https://comic.pixiv.net/magazines/88	ジーンピクシブ
+90	https://comic.pixiv.net/magazines/90	COMICフルール
+
+# エンターブレイン
+3	https://comic.pixiv.net/magazines/3	ファミ通コミッククリア
+34	https://comic.pixiv.net/magazines/34	B's-LOG COMIC
+166	https://comic.pixiv.net/magazines/166	ビーズログCHEEK <http://cheek.pr.pixiv.net/>
+
+# 角川書店
+## 対象外
+60  https://comic.pixiv.net/magazines/60    コンプティーク
+123 https://comic.pixiv.net/magazines/123   コミックNewtype
+129 https://comic.pixiv.net/magazines/129   ヤングエースUP
+
+# 中経出版
+110	https://comic.pixiv.net/magazines/110	キトラ
+
+# その他
+71	https://comic.pixiv.net/magazines/71	Championタップ！
+80	https://comic.pixiv.net/magazines/80	コミックガム
+87	https://comic.pixiv.net/magazines/87	MANGA pixiv
+125	https://comic.pixiv.net/magazines/125	Hugピクシブ
+127	https://comic.pixiv.net/magazines/127	ゆるよん
