@@ -10,8 +10,6 @@ $param{re_loop} = qr{
 	<a[ ]href="(?'link'[^\x{22}]*)"[^>]*>
 	\s*
 	<img[ ][^>]*[ ]alt="(?'title'[^\x{22}]*)"[ ]/>
-	.*?
-	<span[ ]class="inner">(?'m'\d+)月(?'d'\d+)日
 }sx;
 
 WCCheck::parse(%param);

@@ -13,8 +13,6 @@ $param{re_loop} = qr{
 	<h3[ ][^>]*>(?'title'.*?)</h3>
 	.*?
 	<span[ ][^>]*>(?'author'.*?)</span>
-	.*?
-	<time[ ][^>]*>(?'date'\d+/\d+/\d+)
 }sx;
 
 WCCheck::parse(%param);
