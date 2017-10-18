@@ -9,7 +9,7 @@ list=($(cut -f1 -s "${0%/*}"/list.tsv))
 mkdir -p data
 ymd=$(date +%Y%m%d)
 for i in "${list[@]}" ; do
-	url="http://comic-walker.com/magazine/detail/$i/"
+	url="https://comic-walker.com/magazine/detail/$i/"
 	html="data/$i-$ymd.html"
 	txt="${html%.*}.txt"
 	if [ -f "$html" ] ; then continue ; fi
