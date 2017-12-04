@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-my $REGEX_USERLINK = qr!http://4oty\.net/2016/user/[_0-9a-zA-Z]+!;
+my $REGEX_USERLINK = qr!http://4oty\.net/201[67]/user/[_0-9a-zA-Z]+!;
 
 my $REGEX_NEWBOOKS  = qr{
 	<div[ ]class="span12">
