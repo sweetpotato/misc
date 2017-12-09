@@ -4,7 +4,7 @@
  $ mkdir data
 
 2. Get a seed user (anyone OK):
- $ curl -s http://4oty.net/2016/user/sweetpotato14 | ./4oty.pl http://4oty.net/2016/user/sweetpotato14 >data/sweetpotato14.tsv
+ $ ./fetch_user.sh sweetpotato14
 
 3. Track neighbor users from the seed user:
  $ ./track.sh
