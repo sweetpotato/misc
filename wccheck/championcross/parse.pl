@@ -16,7 +16,9 @@ $param{re_loop} = qr{
 	<img[ ][^>]*>
 	\s*
 	<figcaption>
+	\s*
 	<strong>(?'author'.*?)</strong>(?'title'.*?)
+	\s*
 	</figcaption>
 }sx;
 

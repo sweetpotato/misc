@@ -9,7 +9,7 @@ $param{base} = 'https://web-ace.jp/youngaceup/contents/';
 $param{re_loop} = qr{
 	<div[ ]class="box[ ]inner[ ]col[ ]col-width-50">
 	\s*
-	<h3>(?'title'.*?)</h3>
+	<h2>(?'title'.*?)</h2>
 	.*?
 	<a[ ]href="(?'link'[^\x{22}]*)">
 }sx;

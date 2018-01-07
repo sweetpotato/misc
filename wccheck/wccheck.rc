@@ -9,7 +9,7 @@ function fetch_and_parse {
 	[ -f "$html" ]
 	chmod 444 "$html"
 
-	perl -CO -I "${0%/*}"/.. "${0%/*}"/parse.pl <"$html" | sort >"$txt"
+	perl -CO -I "${0%/*}"/.. "${0%/*}"/parse.pl <"$html" | sort | uniq >"$txt"
 	chmod 444 "$txt"
 
 	return 0
