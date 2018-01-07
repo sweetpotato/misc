@@ -1,7 +1,7 @@
 DATA="${DATA:-data}"
 
 function find-data() {
-	find "$DATA" -maxdepth 1 -type f -name '*.tsv'
+	find "$DATA" -mindepth 1 -maxdepth 1 -type f -name '*.user.tsv'
 }
 
 function find-data-filtered() {
