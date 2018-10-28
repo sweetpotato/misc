@@ -5,7 +5,7 @@ use utf8;
 use WCCheck;
 
 my %param = ();
-$param{base} = 'http://comic-earthstar.jp/';
+$param{base} = 'https://comic-earthstar.jp/';
 $param{re_loop} = qr{
 	<li[ ]class="img"><a[ ]href="(?'link'[^\x{22}]*)"[ ]class="img_link">
 }sx;

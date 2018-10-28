@@ -4,6 +4,7 @@ set -xueo pipefail
 source "${0%/*}"/../wccheck.rc
 
 ymd=$(date +%Y%m%d)
+# https://mangacross.jp/comics
 html=data/index.html
 txt="data/$ymd.txt"
 

@@ -5,12 +5,13 @@ use utf8;
 use WCCheck;
 
 my %param = ();
-$param{base} = 'https://cycomi.com/';
-$param{re_pre} = qr|<div id="daily">(.*?)<span class="left">読切</span>|s;
+$param{base} = 'https://cycomi.com/fw/cycomibrowser/title/serialization/';
 $param{re_loop} = qr{
-	<a[ ]href="(?'link'/title[^\x{22}]*)"[^>]*>
+	<a[ ]href="(?'link'/fw/[^\x{22}]*)"[^>]*>
+	\s*
+	<div[ ]class="card-image">
 	.*?
-	<p[ ]class="title_name">(?'title'.*?)</p>
+	<p[ ]class="card-texts-title">(?'title'.*?)</p>
 }sx;
 
 WCCheck::parse(%param);

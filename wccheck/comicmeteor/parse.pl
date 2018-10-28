@@ -5,11 +5,11 @@ use utf8;
 use WCCheck;
 
 my %param = ();
-$param{re_pre} = qr|<h3[^>]*>連載中の作品</h3>(.*?)<h3[^>]*>読み切り作品</h3>|s;
+$param{re_pre} = qr|<div class="main">(.*?)<div class="link_btn link_btn_middle">|s;
 $param{re_loop} = qr{
-	<a[ ]href="(?'link'[^\x{22}]*)"[^>]*>
+	<a[ ]href="(?'link'[^\x{22}]*)">
 	\s*
-	<img[ ][^>]*[ ]alt="(?'title'[^\x{22}]*)"[ ]/>
+	<img[ ][^>]*[ ]alt="(?'title'[^\x{22}]*)">
 }sx;
 
 WCCheck::parse(%param);
