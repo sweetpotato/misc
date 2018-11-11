@@ -5,7 +5,6 @@
 AM01	https://comic-walker.com/magazine/detail/AM01/	電撃マオウ <http://maoh.dengeki.com/>
 AM05	https://comic-walker.com/magazine/detail/AM05/	電撃大王 <http://daioh.dengeki.com/>
 AM06	https://comic-walker.com/magazine/detail/AM06/	電撃だいおうじ <http://daiohg.dengeki.com/>
-AM07	https://comic-walker.com/magazine/detail/AM07/	電撃萌王 <http://moeoh.dengeki.com/>
 AM08	https://comic-walker.com/magazine/detail/AM08/	電撃G'smagazine <http://gs.dengeki.com/>
 AM09	https://comic-walker.com/magazine/detail/AM09/	電撃G'sコミック <http://gs.dengeki.com/>
 AM16	https://comic-walker.com/magazine/detail/AM16/	@vitamin <http://dc.dengeki.com/vitamin/>
@@ -16,6 +15,7 @@ AM19	https://comic-walker.com/magazine/detail/AM19/	デンプレコミック <ht
 AM02    https://comic-walker.com/magazine/detail/AM02/   シルフ <http://sylph.dengeki.com/lineup>
 AM03    https://comic-walker.com/magazine/detail/AM03/   電撃文庫MAGAZINE <http://dengekibunko.jp/magazine/>
 AM04    (存在しない)
+AM07    https://comic-walker.com/magazine/detail/AM07/   電撃萌王 <http://moeoh.dengeki.com/>
 AM10    https://comic-walker.com/magazine/detail/AM10/   電撃ホビーマガジン <http://hobby.dengeki.com/>
 AM11    https://comic-walker.com/magazine/detail/AM11/   電撃D-MANGAオンライン <http://d-manga.dengeki.com/> (閉鎖)
 AM12    https://comic-walker.com/magazine/detail/AM12/   COMIC@LOID <http://comicaloid.jp/> (閉鎖)
@@ -23,17 +23,18 @@ AM13    (存在しない)
 AM14    https://comic-walker.com/magazine/detail/AM14/   電撃G's Festival COMIC <http://gs.dengeki.com/festival/?y=2015> (休刊？)
 AM15    https://comic-walker.com/magazine/detail/AM15/   MIKU-Pack <http://miku-pack.jp/>
 AM18    https://comic-walker.com/magazine/detail/AM18/   週刊アスキー <http://weekly.ascii.jp/>
-(AM20以降は存在しない)
+AM20    https://comic-walker.com/magazine/detail/AM20/   G'sコミック Anothers
+(AM21以降は存在しない)
 
 # エンターブレイン
 EB02	https://comic-walker.com/magazine/detail/EB02/	コミッククリア <http://www.comic-clear.jp/>
-EB03	https://comic-walker.com/magazine/detail/EB03/	B's-LOG COMIC <http://bslogcomic.com/>
 
 ## 保留
 EB01    https://comic-walker.com/magazine/detail/EB01/   コミックビーム <https://www.enterbrain.co.jp/comic/>
 EB06    https://comic-walker.com/magazine/detail/EB06/   ハルタ <https://www.enterbrain.co.jp/product/magazine/harta>
 
 ## 対象外
+EB03    https://comic-walker.com/magazine/detail/EB03/   B's-LOG COMIC <http://bslogcomic.com/>
 EB04    https://comic-walker.com/magazine/detail/EB04/   ファミ通.com <https://www.famitsu.com/>
 EB05    https://comic-walker.com/magazine/detail/EB05/   アルカディア <http://www.arcadiamagazine.com/> (閉鎖)
 (EB07以降は存在しない)
@@ -59,8 +60,8 @@ KS02	https://comic-walker.com/magazine/detail/KS02/	ヤングエース <https://
 KS03	https://comic-walker.com/magazine/detail/KS03/	ガンダムエース <https://web-ace.jp/gundamace/>
 KS04	https://comic-walker.com/magazine/detail/KS04/	コンプエース <https://web-ace.jp/compace/>
 KS05	https://comic-walker.com/magazine/detail/KS05/	コンプティーク <https://web-ace.jp/comptiq/>
-KS09	https://comic-walker.com/magazine/detail/KS09/	コミックNewtype <https://comic.webnewtype.com/>
 KS11	https://comic-walker.com/magazine/detail/KS11/	ヤングエースUP <https://web-ace.jp/youngaceup/>
+KS12	https://comic-walker.com/magazine/detail/KS12/	コミックNewtype <https://comic.webnewtype.com/>
 
 ## 保留
 KS06    https://comic-walker.com/magazine/detail/KS06/   ASUKA <http://asuka-web.jp/>
@@ -69,12 +70,20 @@ KS10    https://comic-walker.com/magazine/detail/KS10/   CIEL <http://shoten.kad
 ## 対象外
 KS07    (存在しない)
 KS08    (存在しない)
-(KS12以降は存在しない)
+KS09    (存在しない)
+(KS13以降は存在しない)
+
+# 富士見書房
+FS01	https://comic-walker.com/magazine/detail/FS01/	ドラゴンエイジ <http://www.fujimishobo.co.jp/webage/>
+
+## 対象外
+FS02    https://comic-walker.com/magazine/detail/FS02/  エイジプレミアム <http://www.fujimishobo.co.jp/sp/201107age_premium/>
+FS03    https://comic-walker.com/magazine/detail/FS03/  ミルフィ <http://www.fujimishobo.co.jp/sp/Millefeui/>
 
 # その他
 
-## 中経出版
-CK01	https://comic-walker.com/magazine/detail/CK01/	キトラ <http://ki-tora.jp/>
-
 ## コミックウォーカー
 CW01	https://comic-walker.com/magazine/detail/CW01/	コミックウォーカー
+
+## 対象外
+CK01    https://comic-walker.com/magazine/detail/CK01/  キトラ <http://ki-tora.jp/>

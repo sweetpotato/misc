@@ -3,14 +3,16 @@ function fetch_and_parse {
 	local html="$2"
 	local txt="$3"
 
-	if [ -f "$html" ] ; then return 1 ; fi
+	if [ ! -f "$html" ] ; then
+		curl --compressed -s -L -o "$html" "$url"
+		[ -f "$html" ]
+		chmod 444 "$html"
+	fi
 
-	curl -o "$html" "$url"
-	[ -f "$html" ]
-	chmod 444 "$html"
-
-	perl -CO -I "${0%/*}"/.. "${0%/*}"/parse.pl <"$html" | sort | uniq >"$txt"
-	chmod 444 "$txt"
+	if [ ! -f "$txt" ] ; then
+		perl -CO -I "${0%/*}"/.. "${0%/*}"/parse.pl <"$html" | sort | uniq >"$txt"
+		chmod 444 "$txt"
+	fi
 
 	return 0
 }

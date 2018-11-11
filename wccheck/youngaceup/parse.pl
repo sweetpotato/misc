@@ -7,7 +7,7 @@ use WCCheck;
 my %param = ();
 $param{base} = 'https://web-ace.jp/youngaceup/contents/';
 $param{re_loop} = qr{
-	<div[ ]class="box[ ]inner[ ]col[ ]col-width-50">
+	<li[ ]class="box[ ]inner[ ]col[ ]col-width-50">
 	\s*
 	<h2>(?'title'.*?)</h2>
 	.*?
