@@ -1,0 +1,90 @@
+# 文字コードは UTF-8
+# 改行コードは LF
+# ハッシュで始まる行は無視される
+# 空行や空白文字（タブを含む）のみの行は無視される
+# ハッシュ以外で始まるタブ区切りの行は1列目を除いて無視される
+
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549029/	4757549024	2016/3/12	ベルゼブブ嬢のお気に召すまま。 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550742/	475755074X	2016/8/22	ベルゼブブ嬢のお気に召すまま。 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551510/	4757551517	2016/11/22	ベルゼブブ嬢のお気に召すまま。 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552722/	4757552726	2017/3/22	ベルゼブブ嬢のお気に召すまま。 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554375/	4757554370	2017/8/22	ベルゼブブ嬢のお気に召すまま。 5
+https://magazine.jp.square-enix.com/top/comics/detail/9784757545151/	4757545150	2014/12/25	俺の彼女に何かようかい 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548282/	4757548281	2015/12/22	俺の彼女に何かようかい 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551848/	4757551843	2016/12/24	俺の彼女に何かようかい 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554764/	4757554761	2017/9/22	俺の彼女に何かようかい 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552746/	4757552742	2017/3/22	生きてますか？ 本田くん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554382/	4757554389	2017/10/21	生きてますか？ 本田くん 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551978/	4757551975	2016/12/24	ダストボックス2.5 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551077/	475755107X	2016/9/24	紅井さんは今日も詰んでる。 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757537897/	4757537891	2012/11/22	鈴木さん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757540798/	4757540795	2013/9/27	鈴木さん 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757543140/	475754314X	2014/5/24	鈴木さんの鈴木くん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757545168/	4757545169	2014/12/25	鈴木さんの鈴木くん 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548206/	4757548206	2015/11/27	鈴木さん 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553057/	4757553056	2017/3/27	鈴木さん 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548077/	4757548079	2015/11/21	久住くん、空気読めてますか？ 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548916/	4757548915	2016/2/22	久住くん、空気読めてますか？ 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550179/	4757550170	2016/6/22	久住くん、空気読めてますか？ 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552234/	4757552238	2017/1/21	久住くん、空気読めてますか？ 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554139/	4757554133	2017/7/22	久住くん、空気読めてますか？ 5
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553842/	4757553846	2017/6/22	賭ケグルイ（仮） 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554498/	4757554494	2017/8/22	賭ケグルイ（仮） 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549609/	4757549601	2016/4/22	僕が僕であるために。 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550834/	4757550839	2016/8/22	僕が僕であるために。 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552241/	4757552246	2017/1/21	僕が僕であるために。 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554184/	4757554184	2017/7/22	僕が僕であるために。 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552838/	4757552831	2017/3/22	Jヲタ男子☆朝比奈くん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553521/	4757553528	2017/5/22	Jヲタ男子☆朝比奈くん 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552814/	4757552815	2017/3/22	ヤンキーショタとオタクおねえさん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554092/	4757554095	2017/7/22	ヤンキーショタとオタクおねえさん 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554122/	4757554125	2017/7/22	旦那さんはオネェさん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549562/	4757549563	2016/4/22	高嶺の花なら落ちてこい!! 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551039/	4757551037	2016/9/21	高嶺の花なら落ちてこい!! 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552791/	4757552793	2017/3/22	高嶺の花なら落ちてこい!! 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554078/	4757554079	2017/7/22	高嶺の花なら落ちてこい!! 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757555228/	4757555229	2017/11/22	高嶺の花なら落ちてこい!! 5
+https://magazine.jp.square-enix.com/top/comics/detail/9784757542860/	4757542860	2014/4/26	田中くんはいつもけだるげ 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757543546/	4757543549	2014/7/22	田中くんはいつもけだるげ 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757544741/	475754474X	2014/11/22	田中くんはいつもけだるげ 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757546424/	4757546424	2015/5/22	田中くんはいつもけだるげ 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757547964/	475754796X	2015/11/21	田中くんはいつもけだるげ 5
+https://magazine.jp.square-enix.com/top/comics/detail/9784757547971/	4757547978	2015/11/21	田中くんはいつもけだるげ　5.5　OFFICIAL TANAKABOOK
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549470/	4757549474	2016/4/22	田中くんはいつもけだるげ 6
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549487/	4757549482	2016/4/22	田中くんはいつもけだるげアンソロジー
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549715/	4757549717	2016/9/21	田中くんはいつもけだるげ 7
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549722/	4757549725	2016/9/21	田中くんはいつもけだるげ 7　初回限定特装版
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553170/	475755317X	2017/4/22	田中くんはいつもけだるげ 8
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554788/	4757554788	2017/9/22	田中くんはいつもけだるげ 9
+https://magazine.jp.square-enix.com/top/comics/detail/9784757535664/	475753566X	2012/4/20	月刊少女野崎くん 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757537774/	4757537778	2012/11/22	月刊少女野崎くん 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757539853/	4757539851	2013/6/22	月刊少女野崎くん 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757542037/	4757542038	2014/1/22	月刊少女野崎くん 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757543539/	4757543530	2014/7/22	月刊少女野崎くん 5
+https://magazine.jp.square-enix.com/top/comics/detail/9784757543782/	4757543786	2015/2/21	月刊少女野崎くん 6
+https://magazine.jp.square-enix.com/top/comics/detail/9784757543799/	4757543794	2015/2/21	月刊少女野崎くん 6　初回限定特装版
+https://magazine.jp.square-enix.com/top/comics/detail/9784757544055/	4757544057	2014/8/22	月刊少女野崎くん アンソロジー
+https://magazine.jp.square-enix.com/top/comics/detail/9784757544062/	4757544065	2014/8/22	月刊少女野崎くん　公式ファンブック
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548305/	4757548303	2015/12/22	月刊少女野崎くん 7
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548701/	4757548702	2016/8/22	月刊少女野崎くん 8
+https://magazine.jp.square-enix.com/top/comics/detail/9784757548718/	4757548710	2016/8/22	月刊少女野崎くん 8　初回限定特装版
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554429/	4757554427	2017/8/22	月刊少女野崎くん 9
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549586/	475754958X	2016/7/12	トリマニア 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550773/	4757550774	2016/8/22	トリマニア 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552203/	4757552203	2017/1/21	トリマニア 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550520/	4757550529	2016/7/12	雨水リンダ 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551718/	4757551711	2016/11/26	雨水リンダ 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757554443/	4757554443	2017/8/26	雨水リンダ 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550964/	4757550960	2016/9/12	大谷さんちの天使様 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757552807/	4757552807	2017/3/22	大谷さんちの天使様 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757550506/	4757550502	2016/7/12	あずみさんは倒せないっ 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553279/	4757553277	2017/4/22	あずみさんは倒せないっ 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551886/	4757551886	2016/12/22	安達としまむら 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553460/	4757553463	2017/6/9	安達としまむら 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757553583/	4757553587	2017/9/12	幽霊の正体見たり、枯れ頭。 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757535381/	4757535384	2012/3/24	咲日和 1
+https://magazine.jp.square-enix.com/top/comics/detail/9784757537088/	4757537085	2012/8/25	咲日和 2
+https://magazine.jp.square-enix.com/top/comics/detail/9784757541832/	475754183X	2013/12/25	咲日和 3
+https://magazine.jp.square-enix.com/top/comics/detail/9784757546981/	475754698X	2015/7/25	咲日和 4
+https://magazine.jp.square-enix.com/top/comics/detail/9784757549388/	4757549385	2016/3/25	咲日和 5
+https://magazine.jp.square-enix.com/top/comics/detail/9784757551947/	4757551940	2016/12/24	咲日和 6

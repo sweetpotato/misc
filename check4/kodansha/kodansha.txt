@@ -1,0 +1,44 @@
+# 文字コードは UTF-8
+# 改行コードは LF
+# ハッシュで始まる行は無視される
+# 空行や空白文字（タブを含む）のみの行は無視される
+# ハッシュ以外で始まるタブ区切りの行は1列目を除いて無視される
+
+http://kc.kodansha.co.jp/title?code=1000000401	とりぱん	とりのなん子
+http://kc.kodansha.co.jp/title?code=1000004281	生徒会役員共	氏家ト全
+http://kc.kodansha.co.jp/title?code=1000006622	独身OLのすべて	まずりん	
+http://kc.kodansha.co.jp/title?code=1000006809	徒然チルドレン	若林稔弥
+http://kc.kodansha.co.jp/title?code=1000025524	大人のそんな奴ァいねえ!!	駒井悠
+http://kc.kodansha.co.jp/title?code=1000028503	妻に恋する66の方法	福満しげゆき
+http://kc.kodansha.co.jp/title?code=1000028895	はじめしゃちょーのユーチューバーな日常	桂シリマル
+http://kc.kodansha.co.jp/title?code=1000029033	今夜はねこちゃん	大川ぶくぶ
+http://kc.kodansha.co.jp/title?code=1000029343	川柳少女	五十嵐正邦
+http://kc.kodansha.co.jp/title?code=1000029407	少女回路	横山キムチ
+http://kc.kodansha.co.jp/title?code=1000029408	ミニパカ	横山キムチ
+http://kc.kodansha.co.jp/title?code=1000029461	まほうつかえない	コンノトヒロ
+http://kc.kodansha.co.jp/title?code=1000029462	オハヨー！半世紀高校	大橋ツヨシ
+http://kc.kodansha.co.jp/title?code=1000029618	青春奇人伝！240学園	柴もち
+http://kc.kodansha.co.jp/title?code=1000029622	ふみんなふみな	城戸みつる
+http://kc.kodansha.co.jp/title?code=1000029910	僕の彼女は最高です！	髙田タカミ／原作：伊織
+http://kc.kodansha.co.jp/title?code=1000030252	しーくれっトラいふ！	とくら
+http://kc.kodansha.co.jp/title?code=1000030361	白聖女と黒牧師	和武はざの
+http://kc.kodansha.co.jp/title?code=1000030473	水曜日の夜には吸血鬼とお店を	羽戸らみ
+http://kc.kodansha.co.jp/title?code=1000030538	にちぶっ！	石川沙絵
+http://kc.kodansha.co.jp/title?code=1000030539	漫画家ちゃんは眠れない	ゆあみ
+http://kc.kodansha.co.jp/title?code=1000030616	ましろくんは世話をやきたいっ！	笹目ゆきち
+http://kc.kodansha.co.jp/title?code=1000030973	マコさんは死んでも自立しない	千田大輔
+http://kc.kodansha.co.jp/title?code=1000031096	たのしいたのししま	大沖
+http://kc.kodansha.co.jp/title?code=1000031229	ムギのころ	片倉真二
+http://kc.kodansha.co.jp/title?code=1000031362	恋するはぐるま	日月アスカ
+http://kc.kodansha.co.jp/title?code=1000032197	ねえちゃんはたかしのことが好きだ好きだ大好きだ!!	佐藤なり
+http://kc.kodansha.co.jp/title?code=1000032164	転スラ日記 転生したらスライムだった件	柴／原作：伏瀬
+
+# 以下、完結
+# http://kc.kodansha.co.jp/title?code=1000006812	ペン太のこと	片倉真二	http://kc.kodansha.co.jp/product?item=0000039179
+# http://kc.kodansha.co.jp/title?code=1000027268	スポイラー甘利	浦津ゆうじ	http://kc.kodansha.co.jp/product?item=0000023014
+# http://kc.kodansha.co.jp/title?code=1000027510	金のタマゴ	カツヲ	http://kc.kodansha.co.jp/product?item=0000019935
+# http://kc.kodansha.co.jp/title?code=1000028005	星野さん家のアルとカナ	ミキマキ	http://kc.kodansha.co.jp/product?item=0000052245
+# http://kc.kodansha.co.jp/title?code=1000028955	おおきなのっぽの、	柴	http://kc.kodansha.co.jp/product?item=0000052089
+
+# 以下、50%未満
+# http://kc.kodansha.co.jp/title?code=1000030465	ハデスさまはお気の毒さま	高松翼

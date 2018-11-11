@@ -1,0 +1,58 @@
+# stdin: list content
+# stdout: filtered content
+load_list() {
+	grep -vE '^#|^\s*$' | cut -d$'\t' -f1
+}
+
+# $1: path to directory to search in
+# stdout: path to text file
+find_latest_text() {
+	local dir="$1"
+	ls "$dir"/*.txt | sort -r | head -n 1
+}
+
+# $1: string to be hashed
+# stdout: hashcode
+hashcode() {
+	echo -n "$1" | sha256sum | awk '{print $1}'
+}
+
+# $1: URL
+# stdout: filesystem-safe string
+make_id() {
+	local url="$1"
+	echo "$url" | sed -r 's/[^a-zA-Z0-9]+/_/g'
+}
+
+# $1: url to be fetched
+# $2: path to file
+fetch_url() {
+	local url="$1"
+	local file="$2"
+
+	curl -s -L --compressed -o "$file" "$url"
+}
+
+# $1: byte sequence to be encoded
+# stdout: encoded one
+urlencode() {
+	local length="${#1}"
+	declare i
+	for (( i=0 ; i<length ; i++ )); do
+		local c="${1:i:1}"
+		case "$c" in
+		[-_.~a-zA-Z0-9])
+			printf "$c"
+			;;
+		' ')
+			printf +
+			;;
+		*)
+			# DO NOT use xargs; it is slow.
+			printf "$c" | xxd -u -ps -c1 | while read x ; do
+				printf %%%s "$x"
+			done
+			;;
+		esac
+	done
+}

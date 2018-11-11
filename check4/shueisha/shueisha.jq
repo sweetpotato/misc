@@ -1,0 +1,1 @@
+.datas[].item_datas[]|[if .isbn == "" then "#N/A" else .isbn end,.release_date,.item_name,(.author_name_datas|join("/"))]|@tsv

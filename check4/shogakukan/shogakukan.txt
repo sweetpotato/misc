@@ -1,0 +1,22 @@
+# 文字コードは UTF-8
+# 改行コードは LF
+# ハッシュで始まる行は無視される
+# 空行や空白文字（タブを含む）のみの行は無視される
+# ハッシュ以外で始まるタブ区切りの行は1列目を除いて無視される
+
+https://comics.shogakukan.co.jp/book-series?cd=29966	ポケモン4コマ学園	山下たかひろ
+https://comics.shogakukan.co.jp/book-series?cd=43113	GJ部＠こみっく	あるや／原作：新木伸
+https://comics.shogakukan.co.jp/book-series?cd=43976	4コマ妖怪ウォッチ ゲラゲラマンガ劇場	ココナスルンバ
+https://comics.shogakukan.co.jp/book-series?cd=44185	たくのみ。	火野遥人
+https://comics.shogakukan.co.jp/book-series?cd=45113	JKおやじ！	加藤みのり
+https://comics.shogakukan.co.jp/book-series?cd=45156	古見さんは、コミュ症です。	オダトモヒト
+https://comics.shogakukan.co.jp/book-series?cd=45703	ぼくたちつきあってます…？	テンヤ
+https://comics.shogakukan.co.jp/book-series?cd=45706	白丸くん、誰推し？	蒼井ひな太
+https://comics.shogakukan.co.jp/book-series?cd=46327	翼くんはあかぬけたいのに	小花オト
+https://comics.shogakukan.co.jp/book-series?cd=46421	三ツ橋高校ねこ部！	雪永めりを
+https://comics.shogakukan.co.jp/book-series?cd=46653	Splatoon イカすキッズ4コマフェス	後藤英貴
+https://comics.shogakukan.co.jp/book-series?cd=46662	歯のマンガ	カトちゃんの花嫁
+https://comics.shogakukan.co.jp/book-series?cd=46893	ばけじょ！ ～妖怪女学園へようこそ～	五味まちと
+https://comics.shogakukan.co.jp/book-series?cd=46952	こぐまのケーキ屋さん	カメントツ
+
+# 小面ちゃん	松村ヨーレイ	(小学館コミックで検索できない)

@@ -1,0 +1,28 @@
+# 文字コードは UTF-8
+# 改行コードは LF
+# ハッシュで始まる行は無視される
+# 空行や空白文字（タブを含む）のみの行は無視される
+# ハッシュ以外で始まるタブ区切りの行は1列目を除いて無視される
+
+https://comics.shogakukan.co.jp/book?isbn=9784091414984	4091414982	2012/12/28	ポケモン４コマ学園　１
+https://comics.shogakukan.co.jp/book?isbn=9784091416797	4091416799	2013/07/26	ポケモン４コマ学園　２
+https://comics.shogakukan.co.jp/book?isbn=9784091421357	4091421350	2016/01/28	ポケモン４コマ学園　３
+https://comics.shogakukan.co.jp/book?isbn=9784091574152	4091574157	2015/04/17	ＧＪ部＠こみっく　１
+https://comics.shogakukan.co.jp/book?isbn=9784091574831	4091574831	2017/04/19	ＧＪ部＠こみっく　２
+https://comics.shogakukan.co.jp/book?isbn=9784091421050	4091421059	2015/10/28	４コマ妖怪ウォッチ　ゲラゲラマンガ劇場　１
+https://comics.shogakukan.co.jp/book?isbn=9784091422330	4091422330	2016/11/28	４コマ妖怪ウォッチ　ゲラゲラマンガ劇場　２
+https://comics.shogakukan.co.jp/book?isbn=9784091266859	4091266851	2015/12/18	たくのみ。　１
+https://comics.shogakukan.co.jp/book?isbn=9784091273093	4091273092	2016/06/17	たくのみ。　２
+https://comics.shogakukan.co.jp/book?isbn=9784091274625	4091274625	2016/12/12	たくのみ。　３
+https://comics.shogakukan.co.jp/book?isbn=9784091277459	4091277454	2017/08/10	たくのみ。　４
+https://comics.shogakukan.co.jp/book?isbn=9784091386229	4091386229	2016/09/01	ＪＫおやじ！　１
+https://comics.shogakukan.co.jp/book?isbn=9784091273437	4091273432	2016/09/16	古見さんは、コミュ症です。　１
+https://comics.shogakukan.co.jp/book?isbn=9784091274267	4091274269	2016/12/16	古見さんは、コミュ症です。　２
+https://comics.shogakukan.co.jp/book?isbn=9784091275097	4091275095	2017/03/17	古見さんは、コミュ症です。　３
+https://comics.shogakukan.co.jp/book?isbn=9784091275752	4091275753	2017/06/16	古見さんは、コミュ症です。　４
+https://comics.shogakukan.co.jp/book?isbn=9784091276643	4091276644	2017/07/18	古見さんは、コミュ症です。　５
+https://comics.shogakukan.co.jp/book?isbn=9784091278562	4091278566	2017/10/18	古見さんは、コミュ症です。　６
+https://comics.shogakukan.co.jp/book?isbn=9784091275349	4091275346	2017/01/12	ぼくたちつきあってます…？　１
+https://comics.shogakukan.co.jp/book?isbn=9784091275370	4091275370	2017/01/12	白丸くん、誰推し？　１
+https://comics.shogakukan.co.jp/book?isbn=9784091278135	4091278132	2017/09/12	翼くんはあかぬけたいのに　１
+https://comics.shogakukan.co.jp/book?isbn=9784091280046	4091280048	2017/10/12	三ツ橋高校ねこ部！　１

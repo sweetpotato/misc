@@ -1,0 +1,52 @@
+# 文字コードは UTF-8
+# 改行コードは LF
+# ハッシュで始まる行は無視される
+# 空行や空白文字（タブを含む）のみの行は無視される
+# ハッシュ以外で始まるタブ区切りの行は1列目を除いて無視される
+
+http://kc.kodansha.co.jp/product?item=0000053219	『独身ＯＬのすべて　ベストセレクション　分冊版』（まずりん） is ebook only at ./kodansha_item.pl line 15, <STDIN> chunk 1.
+
+http://kc.kodansha.co.jp/product?item=0000008904	4063377970	2014/05/23	とりぱん（１６）
+http://kc.kodansha.co.jp/product?item=0000008905	406337808X	2014/11/21	とりぱん（１７）
+http://kc.kodansha.co.jp/product?item=0000008908	4063378314	2015/06/23	とりぱん（１８）
+http://kc.kodansha.co.jp/product?item=0000008911	4063378438	2016/03/23	とりぱん（１９）
+http://kc.kodansha.co.jp/product?item=0000008916	4063378535	2016/10/21	とりぱん（２０）
+http://kc.kodansha.co.jp/product?item=0000008920	4063378624	2017/05/23	とりぱん（２１）
+http://kc.kodansha.co.jp/product?item=0000052219	4065104491	2017/11/22	とりぱん（２２）
+http://kc.kodansha.co.jp/product?item=0000019709	4063956482	2016/04/15	生徒会役員共（１３）
+http://kc.kodansha.co.jp/product?item=0000019885	4063958264	2016/12/16	生徒会役員共（１４）
+http://kc.kodansha.co.jp/product?item=0000023040	4065101867	2017/09/15	生徒会役員共（１５）
+http://kc.kodansha.co.jp/product?item=0000039992	4063587924	2016/04/15	ＤＶＤ付き　生徒会役員共（１３）限定版
+http://kc.kodansha.co.jp/product?item=0000039993	4063587932	2016/12/16	ＤＶＤ付き　生徒会役員共（１４）限定版
+http://kc.kodansha.co.jp/product?item=0000048286	4063970256	2017/09/14	ＤＶＤ付き　生徒会役員共（１５）限定版
+http://kc.kodansha.co.jp/product?item=0000048292	4063970310	2018/03/16	「劇場版　生徒会役員共」ＤＶＤ付き　生徒会役員共（１６）限定版
+http://kc.kodansha.co.jp/product?item=0000015483	4063771202	2015/02/23	独身ＯＬのすべて（２）
+http://kc.kodansha.co.jp/product?item=0000015512	4063773167	2015/09/23	独身ＯＬのすべて（３）
+http://kc.kodansha.co.jp/product?item=0000015576	4063774376	2016/04/22	独身ＯＬのすべて（４）
+http://kc.kodansha.co.jp/product?item=0000018983	4063930556	2016/10/21	独身ＯＬのすべて（５）
+http://kc.kodansha.co.jp/product?item=0000019032	4063931943	2017/06/23	独身ＯＬのすべて（６）
+http://kc.kodansha.co.jp/product?item=0000020014	4063959562	2017/06/16	徒然チルドレン（８）
+http://kc.kodansha.co.jp/product?item=0000023106	406510209X	2017/10/17	徒然チルドレン（９）
+http://kc.kodansha.co.jp/product?item=0000040025	4063588475	2017/10/14	ＤＶＤ付き　徒然チルドレン（９）特装版
+http://kc.kodansha.co.jp/product?item=0000048302	4063970418	2017/11/17	ＤＶＤ付き　徒然チルドレン（１０）特装版
+http://kc.kodansha.co.jp/product?item=0000048303	4063970426	2018/03/16	ＤＶＤ付き　徒然チルドレン（１１）特装版
+http://kc.kodansha.co.jp/product?item=0000052192	4065103916	2017/11/17	徒然チルドレン（１０）
+http://kc.kodansha.co.jp/product?item=0000047410	4063880516	2015/04/23	大人のそんな奴ァいねえ！！
+http://kc.kodansha.co.jp/product?item=0000047505	4063881474	2016/06/23	大人のそんな奴ァいねえ！！（２）
+http://kc.kodansha.co.jp/product?item=0000050109	4065003024	2017/10/23	大人のそんな奴ァいねえ！！（３）
+http://kc.kodansha.co.jp/product?item=0000039133	4063546403	2016/10/21	妻に恋する６６の方法（１）
+http://kc.kodansha.co.jp/product?item=0000039157	4063546640	2017/04/21	妻に恋する６６の方法（２）
+http://kc.kodansha.co.jp/product?item=0000039186	4063546942	2017/10/23	妻に恋する６６の方法（３）
+http://kc.kodansha.co.jp/product?item=0000048087	4063931323	2016/12/22	はじめしゃちょーのユーチューバーな日常（１）
+http://kc.kodansha.co.jp/product?item=0000048095	4063931455	2017/02/14	はじめしゃちょーのユーチューバーな日常（２）
+http://kc.kodansha.co.jp/product?item=0000048158	406393246X	2017/07/21	はじめしゃちょーのユーチューバーな日常（３）
+http://kc.kodansha.co.jp/product?item=0000019944	406395885X	2017/04/17	川柳少女（１）
+http://kc.kodansha.co.jp/product?item=0000022920	4065100615	2017/07/14	川柳少女（２）
+http://kc.kodansha.co.jp/product?item=0000052091	4065103096	2017/10/17	川柳少女（３）
+http://kc.kodansha.co.jp/product?item=0000047616	4063882624	2017/05/23	少女回路（１）
+http://kc.kodansha.co.jp/product?item=0000047617	4063882632	2017/05/23	ミニパカ（１）
+http://kc.kodansha.co.jp/product?item=0000052063	4065102936	2017/09/22	まほうつかえない（１）
+http://kc.kodansha.co.jp/product?item=0000022997	4065101190	2017/08/09	青春奇人伝！２４０学園（１）
+http://kc.kodansha.co.jp/product?item=0000047993	4063925919	2017/06/16	ふみんなふみな（１）
+http://kc.kodansha.co.jp/product?item=0000023178	4065102634	2017/10/06	僕の彼女は最高です！（１）
+http://kc.kodansha.co.jp/product?item=0000052282	4065105250	2017/11/07	しーくれっトラいふ！（１）

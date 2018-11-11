@@ -1,0 +1,134 @@
+# 文字コードは UTF-8
+# 改行コードは LF
+# ハッシュで始まる行は無視される
+# 空行や空白文字（タブを含む）のみの行は無視される
+# ハッシュ以外で始まるタブ区切りの行は1列目を除いて無視される
+
+https://www.kadokawa.co.jp/product/200911000196/	4048682512	2009/11/27	ぷちます！（１）
+https://www.kadokawa.co.jp/product/201008000115/	4048688081	2010/08/27	ぷちます！（２）
+https://www.kadokawa.co.jp/product/201105000085/	4048707019	2011/07/27	ぷちます！（３）
+https://www.kadokawa.co.jp/product/311700100000/	4048868586	2012/10/27	ぷちます！（４）［ぴよぴよチャーム付特装版］
+https://www.kadokawa.co.jp/product/311701600000/	4048868241	2012/10/27	ぷちます！（４）
+https://www.kadokawa.co.jp/product/311821100000/	4048914170	2013/03/27	ぷちます！（５）
+https://www.kadokawa.co.jp/product/311821200000/	4048914189	2013/03/27	ぷちます！（５）［オリジナルアニメＤＶＤ付き限定版］
+https://www.kadokawa.co.jp/product/311982200000/	4048662112	2014/03/27	ぷちます！（６）［オリジナルアニメＤＶＤ付き限定版］
+https://www.kadokawa.co.jp/product/311984100000/	4048661876	2014/03/27	ぷちます！（６）
+https://www.kadokawa.co.jp/product/312224700000/	4048693522	2015/04/27	ぷちます!（７）
+https://www.kadokawa.co.jp/product/321510000183/	4048657283	2016/02/27	ぷちます!（８）
+https://www.kadokawa.co.jp/product/321607000186/	4048924559	2016/11/26	ぷちます!（９）
+https://www.kadokawa.co.jp/product/321703000616/	4048932055	2018/03/26	ぷちます!（１０）[オリジナルアニメDVD付き限定版]
+https://www.kadokawa.co.jp/product/321803001748/	4048939424	2018/11/26	ぷちます!（11）[オリジナルアニメDVD付き限定版]
+https://www.kadokawa.co.jp/product/321702000434/	4048929089	2017/05/26	魔王ビギナーのHow　To　世界征服（１）
+https://www.kadokawa.co.jp/product/321606000125/	4048923633	2016/11/26	とある偶像の一方通行さま（１）
+https://www.kadokawa.co.jp/product/321702000442/	404892916X	2017/08/26	とある偶像の一方通行さま（２）
+https://www.kadokawa.co.jp/product/321503000310/	4048652664	2015/07/27	ウルトラ怪獣擬人化計画　ギャラクシー☆デイズ1
+https://www.kadokawa.co.jp/product/321602000670/	4048921312	2016/06/27	ウルトラ怪獣擬人化計画　ギャラクシー☆デイズ2
+https://www.kadokawa.co.jp/product/321704000113/	4048932586	2017/07/26	ウルトラ怪獣擬人化計画　ギャラクシー☆デイズ3
+https://www.kadokawa.co.jp/product/321601000007/	4048659073	2016/05/27	いきのこれ!　社畜ちゃん（１）
+https://www.kadokawa.co.jp/product/321611000330/	404892690X	2017/02/27	いきのこれ!　社畜ちゃん（２）
+https://www.kadokawa.co.jp/product/321705000183/	4048933078	2017/11/25	いやされて 社畜女子のコミックアンソロジー
+https://www.kadokawa.co.jp/product/321706000100/	404893368X	2017/11/25	いきのこれ！　社畜ちゃん（3）
+https://www.kadokawa.co.jp/product/321610000403/	4040690362	2017/02/23	ついったーさん　１
+https://www.kadokawa.co.jp/product/321608000348/	4040687302	2017/02/23	野球観戦娘！
+https://www.kadokawa.co.jp/product/201216029832/	4840137129	2010/12/22	青春鉄道　２　‐コミックアニメＤＶＤ付き特装便‐
+https://www.kadokawa.co.jp/product/301401000299/	4040662903	2014/02/27	青春鉄道　２０１４年度版
+https://www.kadokawa.co.jp/product/301407000242/	4040672321	2014/12/27	青春鉄道　2015年度版
+https://www.kadokawa.co.jp/product/301605000600/	404068530X	2009/06/23	青春鉄道
+https://www.kadokawa.co.jp/product/301605000602/	4040685318	2010/12/22	青春鉄道２
+https://www.kadokawa.co.jp/product/301605000603/	4040685326	2012/02/27	青春鉄道　３
+https://www.kadokawa.co.jp/product/301605000604/	4040685334	2013/02/27	青春鉄道　４
+https://www.kadokawa.co.jp/product/321506000054/	4040675916	2015/08/27	よりぬき青春鉄道
+https://www.kadokawa.co.jp/product/321508000198/	4040678508	2015/11/27	青春鉄道2016年度版
+https://www.kadokawa.co.jp/product/321604000355/	4040685199	2016/08/27	青春鉄道　黎明編
+https://www.kadokawa.co.jp/product/321607000467/	4040685733	2016/11/04	青春鉄道　2017年度版
+https://www.kadokawa.co.jp/product/321707000686/	4040695313	2017/11/27	青春鉄道　2018年度版
+https://www.kadokawa.co.jp/product/200503000234/	4840230161	2005/03/26	撲殺天使ドクロちゃん（１）
+https://www.kadokawa.co.jp/product/200509000207/	4840231966	2005/09/27	撲殺天使ドクロちゃん（２）
+https://www.kadokawa.co.jp/product/200603000369/	4840234213	2006/03/27	撲殺天使ドクロちゃん（３）
+https://www.kadokawa.co.jp/product/200708000044/	4840240159	2007/08/27	撲殺天使ドクロちゃん　りぴる（１）
+https://www.kadokawa.co.jp/product/200802000246/	4840242259	2008/02/27	撲殺天使ドクロちゃん　りぴる（２）
+https://www.kadokawa.co.jp/product/200812000010/	404867322X	2008/12/17	撲殺天使ドクロちゃん　りぴる（３）
+https://www.kadokawa.co.jp/product/321608000347/	4040688139	2017/02/27	さつてん！　１
+https://www.kadokawa.co.jp/product/301402001127/	4040665538	2014/05/27	オレん家のフロ事情　４
+https://www.kadokawa.co.jp/product/301404000239/	404066583X	2012/03/27	オレん家のフロ事情　１
+https://www.kadokawa.co.jp/product/301404000240/	4040665848	2012/10/27	オレん家のフロ事情　２
+https://www.kadokawa.co.jp/product/301404000241/	4040665856	2013/05/27	オレん家のフロ事情　３
+https://www.kadokawa.co.jp/product/301407000804/	4040668642	2014/09/27	オレん家のフロ事情　５
+https://www.kadokawa.co.jp/product/321504000216/	4040675495	2015/10/27	オレん家のフロ事情　6　ドラマＣＤ付き限定版
+https://www.kadokawa.co.jp/product/321507000073/	4040678338	2015/10/27	オレん家のフロ事情　6
+https://www.kadokawa.co.jp/product/321607000466/	4040685830	2017/08/26	オレん家のフロ事情　（7）
+https://www.kadokawa.co.jp/product/321605000588/	4048923110	2016/08/10	KING　OF　PRISM　by　PrettyRhythm 電撃コミックアンソロジー
+https://www.kadokawa.co.jp/product/321606000583/	4047277770	2016/11/15	KING OF PRISM by PrettyRhythm B’s-LOG COMICS アンソロジー
+https://www.kadokawa.co.jp/product/321608000297/	404068589X	2016/11/26	キンプリ！　1
+https://www.kadokawa.co.jp/product/321702000281/	4040692411	2017/06/27	キンプリ！　(2)
+https://www.kadokawa.co.jp/product/321703000861/	4040693094	2017/10/27	晴れのち四季部
+https://www.kadokawa.co.jp/product/321610000638/	4041053552	2017/04/25	なぜだ内藤
+https://www.kadokawa.co.jp/product/200712000316/	4047150622	2008/05/22	涼宮ハルヒちゃんの憂鬱　（１）
+https://www.kadokawa.co.jp/product/200808000446/	4047151580	2008/12/20	涼宮ハルヒちゃんの憂鬱　（２）
+https://www.kadokawa.co.jp/product/200811000084/	4048542923	2008/12/27	らき☆すた×涼宮ハルヒちゃんの憂鬱　でっかいお楽しみＢＯＮ
+https://www.kadokawa.co.jp/product/200811000480/	4047152633	2009/07/22	涼宮ハルヒちゃんの憂鬱　（３）
+https://www.kadokawa.co.jp/product/200909000104/	4047153524	2009/12/23	涼宮ハルヒちゃんの憂鬱　（４）
+https://www.kadokawa.co.jp/product/201006000607/	4047155616	2010/11/24	涼宮ハルヒちゃんの憂鬱　（５）
+https://www.kadokawa.co.jp/product/201105000042/	4047157791	2011/09/17	涼宮ハルヒちゃんの憂鬱　（６）
+https://www.kadokawa.co.jp/product/321207000135/	4041204933	2012/11/21	涼宮ハルヒちゃんの憂鬱　（７）
+https://www.kadokawa.co.jp/product/321308000061/	4041209552	2013/12/26	涼宮ハルヒちゃんの憂鬱　（８）
+https://www.kadokawa.co.jp/product/321311000136/	4041210402	2014/03/04	涼宮ハルヒちゃんの憂鬱　（９）
+https://www.kadokawa.co.jp/product/321411000130/	4041028787	2015/03/26	涼宮ハルヒちゃんの憂鬱　（１０）
+https://www.kadokawa.co.jp/product/321607000586/	404105043X	2017/02/04	涼宮ハルヒちゃんの憂鬱　（１１）
+https://www.kadokawa.co.jp/product/321404000295/	404102028X	2014/07/26	鬼灯さん家のアネキ（＋妹）　（１）
+https://www.kadokawa.co.jp/product/321410000175/	4041028051	2014/12/29	鬼灯さん家のアネキ（＋妹）　（２）
+https://www.kadokawa.co.jp/product/321501000304/	4041030897	2015/05/02	鬼灯さん家のアネキ（＋妹）　（３）
+https://www.kadokawa.co.jp/product/321501000305/	4041030900	2015/09/04	鬼灯さん家のアネキ（＋妹）　（４）
+https://www.kadokawa.co.jp/product/321510000288/	4041039339	2016/04/04	鬼灯さん家のアネキ（＋妹）　（５）
+https://www.kadokawa.co.jp/product/321605000444/	4041048176	2016/10/04	鬼灯さん家のアネキ（＋妹）　（６）
+https://www.kadokawa.co.jp/product/321610000643/	4041053609	2017/04/04	鬼灯さん家のアネキ（＋妹）　（７）
+https://www.kadokawa.co.jp/product/200503000701/	4047137502	2005/08/24	機動戦士ガンダムさん　さいしょの巻
+https://www.kadokawa.co.jp/product/200609000145/	4047138878	2006/12/21	機動戦士ガンダムさん　つぎの巻
+https://www.kadokawa.co.jp/product/200710000077/	4047150045	2007/12/20	機動戦士ガンダムさん　みっつめの巻
+https://www.kadokawa.co.jp/product/200809000439/	404715170X	2009/01/22	機動戦士ガンダムさん　よっつめの巻
+https://www.kadokawa.co.jp/product/200907000155/	4047153095	2009/10/22	機動戦士ガンダムさん　いつつめの巻
+https://www.kadokawa.co.jp/product/200909000127/	4047153621	2010/02/24	機動戦士ガンダムさん　公式ファンブック
+https://www.kadokawa.co.jp/product/201003000253/	4047154679	2010/08/21	機動戦士ガンダムさん　むっつめの巻
+https://www.kadokawa.co.jp/product/201004000054/	4047154954	2011/03/02	戦国ヤンキー
+https://www.kadokawa.co.jp/product/201009000554/	4047156558	2011/03/19	機動戦士ガンダムさん　ななつめの巻
+https://www.kadokawa.co.jp/product/201009000556/	4047156132	2011/03/11	機動戦士ガンダムさん　ななつめの巻　特装版
+https://www.kadokawa.co.jp/product/201108000625/	4041200660	2011/12/21	機動戦士ガンダムさん　やっつめの巻
+https://www.kadokawa.co.jp/product/201108000662/	4041200652	2011/12/21	機動戦士ガンダムさん　ニッポン☆再発見
+https://www.kadokawa.co.jp/product/321208000205/	404120531X	2012/12/20	機動戦士ガンダムさん　ここのつめの巻
+https://www.kadokawa.co.jp/product/321307000235/	404120903X	2013/09/21	機動戦士ガンダムさん　（１０）の巻
+https://www.kadokawa.co.jp/product/321311000131/	4041210623	2014/03/26	機動戦士ガンダムさん　（１１）の巻
+https://www.kadokawa.co.jp/product/321407000127/	4041022878	2014/10/25	機動戦士ガンダムさん　（１２）の巻
+https://www.kadokawa.co.jp/product/321503000216/	4041033373	2015/07/25	機動戦士ガンダムさん　（１３）の巻
+https://www.kadokawa.co.jp/product/321601000433/	4041042607	2016/04/26	機動戦士ガンダムさん　（１４）の巻
+https://www.kadokawa.co.jp/product/321612000568/	4041055547	2017/04/24	機動戦士ガンダムさん　（１５）の巻
+https://www.kadokawa.co.jp/product/321512000434/	4041041481	2016/05/26	我らひとしくギャルゲヒロイン
+https://www.kadokawa.co.jp/product/321402000085/	4041017319	2014/07/10	ＴＹＰＥ－ＭＯＯＮ学園 ちびちゅき！（１）
+https://www.kadokawa.co.jp/product/321407000131/	4041022916	2014/12/10	ＴＹＰＥ－ＭＯＯＮ学園 ちびちゅき！（２）
+https://www.kadokawa.co.jp/product/321504000148/	4041034116	2015/09/10	ＴＹＰＥ－ＭＯＯＮ学園 ちびちゅき！（３）
+https://www.kadokawa.co.jp/product/321606000394/	4041048648	2016/12/10	ＴＹＰＥ－ＭＯＯＮ学園 ちびちゅき！　（４）
+https://www.kadokawa.co.jp/product/321604000456/	4041046742	2016/09/03	女戦士とオークさん　（１）
+https://www.kadokawa.co.jp/product/321704000496/	4041060184	2017/09/04	ひぎゃくのノエルちゃん
+https://www.kadokawa.co.jp/product/321708000537/	404106399X	2017/11/10	ほわころくらぶ
+https://www.kadokawa.co.jp/product/321509000567/	4041038685	2016/02/10	ねこ戦　三国志にゃんこ
+https://www.kadokawa.co.jp/product/321605000430/	4041047951	2016/10/08	ねこ戦　三国志にゃんこ　弐
+https://www.kadokawa.co.jp/product/321703000872/	4041058945	2017/07/26	ねこ戦　三国志にゃんこ　参
+https://www.kadokawa.co.jp/product/301310000842/	4047293334	2013/12/14	艦隊これくしょん　－艦これ－　４コマコミック　吹雪、がんばります！（１）
+https://www.kadokawa.co.jp/product/301402004960/	4047296406	2014/04/14	艦隊これくしょん　‐艦これ‐　４コマコミック　吹雪、がんばります！（２）
+https://www.kadokawa.co.jp/product/301406000660/	4047298530	2014/08/11	艦隊これくしょん　‐艦これ‐　４コマコミック　吹雪、がんばります！（３）
+https://www.kadokawa.co.jp/product/301411000816/	4047301442	2015/01/15	艦隊これくしょん　-艦これ-　4コマコミック　吹雪、がんばります！(4)
+https://www.kadokawa.co.jp/product/301503001354/	4047304964	2015/05/15	艦隊これくしょん　－艦これ－　４コマコミック　吹雪、がんばります！（５）
+https://www.kadokawa.co.jp/product/301508000319/	4047307777	2015/10/15	艦隊これくしょん -艦これ- 4コマコミック 吹雪、がんばります!(6)
+https://www.kadokawa.co.jp/product/321601000405/	4047340782	2016/03/14	艦隊これくしょん ‐艦これ‐ 4コマコミック 吹雪、がんばります!(7)
+https://www.kadokawa.co.jp/product/321605000241/	4047342823	2016/07/15	艦隊これくしょん　-艦これ-　4コマコミック　吹雪、がんばります！(8)
+https://www.kadokawa.co.jp/product/321609000632/	4047344273	2017/01/14	艦隊これくしょん　-艦これ-　4コマコミック　吹雪、がんばります！(9)
+https://www.kadokawa.co.jp/product/321703001041/	4047346969	2017/07/15	艦隊これくしょん　-艦これ-　4コマコミック　吹雪、がんばります！ 10
+https://www.kadokawa.co.jp/product/321512000012/	4047309664	2016/03/14	ロリクラ☆ほーるど!（1）
+https://www.kadokawa.co.jp/product/321608000634/	4047343552	2017/02/15	ロリクラ☆ほーるど！(2)
+https://www.kadokawa.co.jp/product/321705000380/	4040724380	2017/09/08	美人女上司滝沢さん
+https://www.kadokawa.co.jp/product/201204000598/	4041203848	2012/07/24	みにヴぁん　（１）
+https://www.kadokawa.co.jp/product/301407000423/	4048994077	2014/08/26	みにヴぁん　３
+https://www.kadokawa.co.jp/product/301508000375/	404899414X	2015/09/26	みにヴぁん　４
+https://www.kadokawa.co.jp/product/301608000295/	4048994212	2016/09/26	みにヴぁん　５
+https://www.kadokawa.co.jp/product/301708000826/	4048994336	2017/10/07	みにヴぁん 6
+https://www.kadokawa.co.jp/product/321302000099/	4041208084	2013/06/22	みにヴぁん　（２）
+https://www.kadokawa.co.jp/product/301702000626/	4048994271	2017/03/17	まけるな!! あくのぐんだん！　（１）
